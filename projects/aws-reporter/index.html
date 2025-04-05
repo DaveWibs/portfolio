@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Reporter | Dave Botton</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding: var(--spacing-xl) 0;
+        }
+        .project-detail-header {
+            margin-bottom: var(--spacing-lg);
+        }
+        .project-detail-header h1 {
+            margin-bottom: var(--spacing-xs);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: var(--spacing-md);
+            font-weight: 500;
+        }
+        .back-link i {
+            transition: transform var(--transition-fast);
+        }
+        .back-link:hover i {
+            transform: translateX(-4px);
+        }
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--spacing-lg);
+        }
+        .project-image {
+            width: 100%;
+            height: 400px;
+            background-color: var(--background-alt);
+            border-radius: 8px;
+            margin-bottom: var(--spacing-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color-lighter);
+            font-size: 1.8rem;
+        }
+        .project-sidebar {
+            background-color: var(--background-alt);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            position: sticky;
+            top: 100px;
+        }
+        .project-info-item {
+            margin-bottom: var(--spacing-md);
+        }
+        .project-info-item:last-child {
+            margin-bottom: 0;
+        }
+        .project-info-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .tech-item {
+            background-color: var(--background-color);
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-size: 1.4rem;
+        }
+        @media (max-width: 992px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+            .project-sidebar {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DB</div>
+                <ul class="nav-links">
+                    <li><a href="../../index.html#about" class="nav-link">About</a></li>
+                    <li><a href="../../index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="../../index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun light-icon"></i>
+                    <i class="fas fa-moon dark-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-detail">
+            <div class="container">
+                <a href="../../index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                <div class="project-detail-header">
+                    <h1>AWS Reporter</h1>
+                    <div class="separator"></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-main">
+                        <div class="project-image">
+                            <span>Project Screenshot</span>
+                        </div>
+                        <h2>Project Overview</h2>
+                        <p>AWS Reporter allows users to run complex Cloudwatch queries with ease by leveraging the AWS CLI in a browser. This tool simplifies AWS monitoring and reporting by providing a user-friendly interface for accessing and analyzing AWS Cloudwatch data.</p>
+                        
+                        <h2>Challenge</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        
+                        <h2>Solution</h2>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        
+                        <h2>Results</h2>
+                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    </div>
+                    <div class="project-sidebar">
+                        <div class="project-info-item">
+                            <h3>Technologies</h3>
+                            <div class="tech-list">
+                                <span class="tech-item">Node.js</span>
+                                <span class="tech-item">REST APIs</span>
+                                <span class="tech-item">AWS</span>
+                            </div>
+                        </div>
+                        <div class="project-info-item">
+                            <h3>Timeline</h3>
+                            <p>2023 - Present</p>
+                        </div>
+                        <div class="project-info-item">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Browser-based AWS CLI interface</li>
+                                <li>Simplified Cloudwatch query builder</li>
+                                <li>Data visualization for metrics</li>
+                                <li>Shareable report links</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Dave Botton. All Rights Reserved.</p>
+                <a href="#" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Independent theme toggle functionality for project pages
+        // Check if dark mode is set in localStorage and apply it on page load
+        if(localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+        
+        // Theme toggle functionality
+        document.querySelector('.theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            // Store the preference in localStorage
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        });
+        
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Back to top functionality
+        document.querySelector('.back-to-top').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
