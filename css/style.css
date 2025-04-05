@@ -486,6 +486,11 @@ nav {
     box-shadow: var(--card-shadow);
     aspect-ratio: 3/4;
     margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-alt);
+    padding: 12px;
 }
 
 .profile-placeholder {
@@ -500,6 +505,14 @@ nav {
 .profile-placeholder i {
     font-size: 8rem;
     color: var(--text-color-lighter);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
 }
 
 .tech-stack {
